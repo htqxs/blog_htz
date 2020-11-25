@@ -1,0 +1,936 @@
+2020-11-07 18:40:44.174  INFO 18452 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Starting HtzBlogSpringBootApplication on LAPTOP-DOB2C73A with PID 18452 (D:\JavaStudy\个人博客\htz\blog_new\target\classes started by zhang in D:\JavaStudy\个人博客\htz\blog_new)
+2020-11-07 18:40:44.218 DEBUG 18452 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-11-07 18:40:44.219  INFO 18452 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : The following profiles are active: dev
+2020-11-07 18:40:46.271  INFO 13628 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Starting HtzBlogSpringBootApplication on LAPTOP-DOB2C73A with PID 13628 (D:\JavaStudy\个人博客\htz\blog_new\target\classes started by zhang in D:\JavaStudy\个人博客\htz\blog_new)
+2020-11-07 18:40:46.279 DEBUG 13628 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-11-07 18:40:46.279  INFO 13628 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : The following profiles are active: dev
+2020-11-07 18:40:47.636  INFO 18452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-11-07 18:40:47.648  INFO 18452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-07 18:40:47.649  INFO 18452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-07 18:40:47.709  INFO 13628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-11-07 18:40:47.717  INFO 13628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-07 18:40:47.717  INFO 13628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-07 18:40:47.731  INFO 18452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-07 18:40:47.731  INFO 18452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3287 ms
+2020-11-07 18:40:47.798  INFO 13628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-07 18:40:47.798  INFO 13628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1461 ms
+2020-11-07 18:40:48.741  INFO 13628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:40:48.773  INFO 18452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:40:48.831  INFO 13628 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-07 18:40:48.875  INFO 18452 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-07 18:40:49.136  INFO 13628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-11-07 18:40:49.147  INFO 13628 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Started HtzBlogSpringBootApplication in 4.585 seconds (JVM running for 6.287)
+2020-11-07 18:40:49.209  WARN 18452 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8888 is already in use
+2020-11-07 18:40:49.209  INFO 18452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:40:49.210  INFO 18452 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-07 18:40:49.213  INFO 18452 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-07 18:40:49.238  INFO 18452 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-07 18:40:49.245 ERROR 18452 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+
+2020-11-07 18:41:05.776  INFO 13628 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-07 18:41:05.776  INFO 13628 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-07 18:41:05.789  INFO 13628 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-11-07 18:41:05.901  INFO 13628 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-07 18:41:06.097 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:41:06.116 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:41:06.170 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:41:06.173 DEBUG 13628 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where publish = 1 and show_status = 1 LIMIT ? 
+2020-11-07 18:41:06.173 DEBUG 13628 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : ==> Parameters: 8(Integer)
+2020-11-07 18:41:06.180 DEBUG 13628 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : <==      Total: 8
+2020-11-07 18:41:06.190 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.190 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.203 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.204 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.204 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.205 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.205 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.206 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.211 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-07 18:41:06.226 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-07 18:41:06.227 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 2(Long), 3(Long)
+2020-11-07 18:41:06.231 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-07 18:41:06.234 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.235 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.237 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.238 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.238 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.239 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.240 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.254 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.255 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.256 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.256 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.257 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 1
+2020-11-07 18:41:06.257 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? ) 
+2020-11-07 18:41:06.258 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.259 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 1
+2020-11-07 18:41:06.260 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.260 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.261 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.262 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.262 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.263 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.263 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.264 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.265 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.265 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.266 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 3(Long)
+2020-11-07 18:41:06.266 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 1
+2020-11-07 18:41:06.267 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? ) 
+2020-11-07 18:41:06.268 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.269 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 1
+2020-11-07 18:41:06.271 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.271 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.272 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.273 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.273 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.274 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.274 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.275 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.275 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.276 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.276 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 7(Long)
+2020-11-07 18:41:06.277 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-07 18:41:06.284 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-07 18:41:06.284 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long), 4(Long), 6(Long)
+2020-11-07 18:41:06.285 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-07 18:41:06.286 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.286 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.287 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.288 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.288 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.289 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.290 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.290 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.291 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.291 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.292 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 8(Long)
+2020-11-07 18:41:06.293 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-07 18:41:06.293 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-07 18:41:06.293 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long), 4(Long), 7(Long)
+2020-11-07 18:41:06.294 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-07 18:41:06.295 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.295 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.296 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.298 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.298 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.299 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.300 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.301 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.302 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.304 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.304 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 9(Long)
+2020-11-07 18:41:06.305 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-07 18:41:06.306 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-07 18:41:06.306 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long), 5(Long), 6(Long)
+2020-11-07 18:41:06.308 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-07 18:41:06.308 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.309 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.310 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.311 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.311 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.312 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.313 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.313 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.315 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.317 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.317 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 11(Long)
+2020-11-07 18:41:06.320 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-07 18:41:06.321 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-07 18:41:06.321 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long), 3(Long), 5(Long)
+2020-11-07 18:41:06.323 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-07 18:41:06.325 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.325 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.326 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.328 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.328 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.329 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.330 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.331 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.334 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.336 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-07 18:41:06.336 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 14(Long)
+2020-11-07 18:41:06.337 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-07 18:41:06.339 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-07 18:41:06.339 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 2(Long), 3(Long), 4(Long)
+2020-11-07 18:41:06.341 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-07 18:41:06.342 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-07 18:41:06.342 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.343 DEBUG 13628 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-07 18:41:06.345 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:41:06.346 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:41:06.353 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : <==      Total: 9
+2020-11-07 18:41:06.356 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.356 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.357 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.358 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.359 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.360 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.361 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.361 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 3(Long)
+2020-11-07 18:41:06.362 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.363 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.363 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.365 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.367 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.368 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 4(Long)
+2020-11-07 18:41:06.370 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.371 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.371 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.372 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.373 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.373 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 5(Long)
+2020-11-07 18:41:06.375 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.376 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.376 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.377 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.378 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.379 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 6(Long)
+2020-11-07 18:41:06.380 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.381 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.382 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.384 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.386 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.386 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 7(Long)
+2020-11-07 18:41:06.389 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.390 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.390 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.392 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.393 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.393 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 9(Long)
+2020-11-07 18:41:06.394 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.395 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.396 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 8(Long)
+2020-11-07 18:41:06.398 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.400 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.401 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 10(Long)
+2020-11-07 18:41:06.403 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.404 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.405 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 8(Long)
+2020-11-07 18:41:06.407 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.408 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.408 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 11(Long)
+2020-11-07 18:41:06.409 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.411 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-07 18:41:06.411 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 8(Long)
+2020-11-07 18:41:06.413 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-07 18:41:06.422 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:41:06.423 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:41:06.424 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 12
+2020-11-07 18:41:06.426 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.427 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 1(Long)
+2020-11-07 18:41:06.429 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.432 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.433 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 2(Long)
+2020-11-07 18:41:06.435 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.438 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.439 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 3(Long)
+2020-11-07 18:41:06.440 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.443 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.443 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 4(Long)
+2020-11-07 18:41:06.444 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.445 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.446 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 5(Long)
+2020-11-07 18:41:06.448 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.450 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.452 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 6(Long)
+2020-11-07 18:41:06.456 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.457 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.457 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 7(Long)
+2020-11-07 18:41:06.458 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.459 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.459 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 9(Long)
+2020-11-07 18:41:06.460 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.461 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.461 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 10(Long)
+2020-11-07 18:41:06.462 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.463 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.463 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 11(Long)
+2020-11-07 18:41:06.466 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.469 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.469 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 12(Long)
+2020-11-07 18:41:06.472 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.473 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-07 18:41:06.474 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 22(Long)
+2020-11-07 18:41:06.476 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-07 18:41:06.481 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:41:06.481 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:41:06.487 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-07 18:41:06.492 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:41:06.493 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:41:06.500 DEBUG 13628 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-07 18:41:06.647  INFO 13628 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":685,"url":"http://localhost:8888/"}
+2020-11-07 18:41:09.113 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:41:09.114 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:41:09.126 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:41:09.127 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select sum(read_num) from t_blog 
+2020-11-07 18:41:09.127 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:41:09.129 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:41:09.130 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==>  Preparing: select sum(comment_num) from t_blog 
+2020-11-07 18:41:09.131 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==> Parameters: 
+2020-11-07 18:41:09.132 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.getBlogCommentTotal   : <==      Total: 1
+2020-11-07 18:41:09.136 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.MessageMapper.getCountMessages   : ==>  Preparing: select count(id) from t_message; 
+2020-11-07 18:41:09.137 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.MessageMapper.getCountMessages   : ==> Parameters: 
+2020-11-07 18:41:09.143 DEBUG 13628 --- [http-nio-8888-exec-7] c.h.b.m.MessageMapper.getCountMessages   : <==      Total: 1
+2020-11-07 18:41:09.143  INFO 13628 --- [http-nio-8888-exec-7] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":31,"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 18:41:30.254  INFO 16812 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Starting HtzBlogSpringBootApplication on LAPTOP-DOB2C73A with PID 16812 (D:\JavaStudy\个人博客\htz\blog_new\target\classes started by zhang in D:\JavaStudy\个人博客\htz\blog_new)
+2020-11-07 18:41:30.266 DEBUG 16812 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-11-07 18:41:30.267  INFO 16812 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : The following profiles are active: pro
+2020-11-07 18:41:34.312  INFO 16812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-11-07 18:41:34.329  INFO 16812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-07 18:41:34.329  INFO 16812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-07 18:41:34.502  INFO 16812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-07 18:41:34.502  INFO 16812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4089 ms
+2020-11-07 18:41:36.568  INFO 16812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:41:36.812  INFO 16812 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-07 18:41:37.560  WARN 16812 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2020-11-07 18:41:37.561  INFO 16812 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:41:37.565  INFO 16812 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2020-11-07 18:41:37.578  INFO 16812 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-07 18:41:37.653  INFO 16812 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-07 18:41:37.684 ERROR 16812 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-07 18:42:34.687  INFO 18600 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Starting HtzBlogSpringBootApplication on LAPTOP-DOB2C73A with PID 18600 (D:\JavaStudy\个人博客\htz\blog_new\target\classes started by zhang in D:\JavaStudy\个人博客\htz\blog_new)
+2020-11-07 18:42:34.690 DEBUG 18600 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-11-07 18:42:34.691  INFO 18600 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : The following profiles are active: pro
+2020-11-07 18:42:36.058  INFO 18600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-11-07 18:42:36.066  INFO 18600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-07 18:42:36.066  INFO 18600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-07 18:42:36.165  INFO 18600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-07 18:42:36.165  INFO 18600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1424 ms
+2020-11-07 18:42:37.099  INFO 18600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:42:37.197  INFO 18600 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-07 18:42:37.532  INFO 18600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-11-07 18:42:37.543  INFO 18600 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Started HtzBlogSpringBootApplication in 3.506 seconds (JVM running for 4.441)
+2020-11-07 18:42:37.618  INFO 18600 --- [http-nio-8888-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1604745670; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1604745670] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-11-07 18:42:37.624  INFO 18600 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-07 18:42:37.625  INFO 18600 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-07 18:42:37.633  INFO 18600 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-11-07 18:42:37.770  INFO 18600 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-07 18:42:38.876 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:42:38.896 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:42:38.964 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:42:38.970 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:42:38.970 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:42:39.028 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : <==      Total: 0
+2020-11-07 18:42:39.048 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:42:39.048 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:42:39.097 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 0
+2020-11-07 18:42:39.102 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:42:39.103 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:42:39.161 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:42:39.161 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:42:39.162 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:42:39.215 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:42:39.287  INFO 18600 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":1549,"url":"http://localhost:8888/"}
+2020-11-07 18:42:40.072 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:42:40.072 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:42:40.125 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:42:40.127 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select sum(read_num) from t_blog 
+2020-11-07 18:42:40.128 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:42:40.180 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:42:40.194  INFO 18600 --- [http-nio-8888-exec-2] cn.htz.blog.aspect.LogAspect             : Error Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","exception":{"@type":"java.lang.NullPointerException","stackTrace":[{"className":"cn.htz.blog.controller.front.IndexController","fileName":"IndexController.java","lineNumber":255,"methodName":"blogMessage","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960","fileName":"<generated>","lineNumber":-1,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.cglib.proxy.MethodProxy","fileName":"MethodProxy.java","lineNumber":218,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":771,"methodName":"invokeJoinpoint","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":163,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAfterThrowingAdvice","fileName":"AspectJAfterThrowingAdvice.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint","fileName":"MethodInvocationProceedingJoinPoint.java","lineNumber":88,"methodName":"proceed","nativeMethod":false},{"className":"cn.htz.blog.aspect.LogAspect","fileName":"LogAspect.java","lineNumber":39,"methodName":"doAround","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":644,"methodName":"invokeAdviceMethodWithGivenArgs","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":633,"methodName":"invokeAdviceMethod","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAroundAdvice","fileName":"AspectJAroundAdvice.java","lineNumber":70,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.interceptor.ExposeInvocationInterceptor","fileName":"ExposeInvocationInterceptor.java","lineNumber":95,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor","fileName":"CglibAopProxy.java","lineNumber":691,"methodName":"intercept","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d","fileName":"<generated>","lineNumber":-1,"methodName":"blogMessage","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":190,"methodName":"doInvoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":138,"methodName":"invokeForRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","fileName":"ServletInvocableHandlerMethod.java","lineNumber":105,"methodName":"invokeAndHandle","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":878,"methodName":"invokeHandlerMethod","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":792,"methodName":"handleInternal","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":87,"methodName":"handle","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":1040,"methodName":"doDispatch","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":943,"methodName":"doService","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":1006,"methodName":"processRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":898,"methodName":"doGet","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":626,"methodName":"service","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":883,"methodName":"service","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":733,"methodName":"service","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":231,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.tomcat.websocket.server.WsFilter","fileName":"WsFilter.java","lineNumber":53,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CorsFilter","fileName":"CorsFilter.java","lineNumber":92,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"com.alibaba.druid.support.http.WebStatFilter","fileName":"WebStatFilter.java","lineNumber":124,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.RequestContextFilter","fileName":"RequestContextFilter.java","lineNumber":100,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.FormContentFilter","fileName":"FormContentFilter.java","lineNumber":93,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CharacterEncodingFilter","fileName":"CharacterEncodingFilter.java","lineNumber":201,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.StandardWrapperValve","fileName":"StandardWrapperValve.java","lineNumber":202,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardContextValve","fileName":"StandardContextValve.java","lineNumber":96,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.authenticator.AuthenticatorBase","fileName":"AuthenticatorBase.java","lineNumber":541,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardHostValve","fileName":"StandardHostValve.java","lineNumber":139,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.valves.ErrorReportValve","fileName":"ErrorReportValve.java","lineNumber":92,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardEngineValve","fileName":"StandardEngineValve.java","lineNumber":74,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.connector.CoyoteAdapter","fileName":"CoyoteAdapter.java","lineNumber":343,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.http11.Http11Processor","fileName":"Http11Processor.java","lineNumber":373,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.AbstractProcessorLight","fileName":"AbstractProcessorLight.java","lineNumber":65,"methodName":"process","nativeMethod":false},{"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","fileName":"AbstractProtocol.java","lineNumber":868,"methodName":"process","nativeMethod":false},{"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","fileName":"NioEndpoint.java","lineNumber":1589,"methodName":"doRun","nativeMethod":false},{"className":"org.apache.tomcat.util.net.SocketProcessorBase","fileName":"SocketProcessorBase.java","lineNumber":49,"methodName":"run","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"methodName":"runWorker","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor$Worker","fileName":"ThreadPoolExecutor.java","lineNumber":617,"methodName":"run","nativeMethod":false},{"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","fileName":"TaskThread.java","lineNumber":61,"methodName":"run","nativeMethod":false},{"className":"java.lang.Thread","fileName":"Thread.java","lineNumber":745,"methodName":"run","nativeMethod":false}]},"httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","requestParams":{"model":{}},"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 18:42:40.200 ERROR 18600 --- [http-nio-8888-exec-2] c.htz.blog.exception.MyExceptionHandler  : null
+
+java.lang.NullPointerException: null
+	at cn.htz.blog.controller.front.IndexController.blogMessage(IndexController.java:255)
+	at cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at cn.htz.blog.aspect.LogAspect.doAround(LogAspect.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d.blogMessage(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-11-07 18:42:59.567 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:42:59.569 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:42:59.625 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:42:59.629 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:42:59.630 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:42:59.685 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.C.getLastCategoryList            : <==      Total: 0
+2020-11-07 18:42:59.687 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:42:59.694 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:42:59.749 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 0
+2020-11-07 18:42:59.755 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:42:59.759 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:42:59.814 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:42:59.815 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:42:59.816 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:42:59.873 DEBUG 18600 --- [http-nio-8888-exec-4] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:42:59.875  INFO 18600 --- [http-nio-8888-exec-4] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":313,"url":"http://localhost:8888/"}
+2020-11-07 18:43:01.637 DEBUG 18600 --- [http-nio-8888-exec-5] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:43:01.638 DEBUG 18600 --- [http-nio-8888-exec-5] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:43:01.696 DEBUG 18600 --- [http-nio-8888-exec-5] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:43:01.699 DEBUG 18600 --- [http-nio-8888-exec-5] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select sum(read_num) from t_blog 
+2020-11-07 18:43:01.699 DEBUG 18600 --- [http-nio-8888-exec-5] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:43:01.748 DEBUG 18600 --- [http-nio-8888-exec-5] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:43:01.751  INFO 18600 --- [http-nio-8888-exec-5] cn.htz.blog.aspect.LogAspect             : Error Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","exception":{"@type":"java.lang.NullPointerException","stackTrace":[{"className":"cn.htz.blog.controller.front.IndexController","fileName":"IndexController.java","lineNumber":255,"methodName":"blogMessage","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960","fileName":"<generated>","lineNumber":-1,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.cglib.proxy.MethodProxy","fileName":"MethodProxy.java","lineNumber":218,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":771,"methodName":"invokeJoinpoint","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":163,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAfterThrowingAdvice","fileName":"AspectJAfterThrowingAdvice.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint","fileName":"MethodInvocationProceedingJoinPoint.java","lineNumber":88,"methodName":"proceed","nativeMethod":false},{"className":"cn.htz.blog.aspect.LogAspect","fileName":"LogAspect.java","lineNumber":39,"methodName":"doAround","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":644,"methodName":"invokeAdviceMethodWithGivenArgs","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":633,"methodName":"invokeAdviceMethod","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAroundAdvice","fileName":"AspectJAroundAdvice.java","lineNumber":70,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.interceptor.ExposeInvocationInterceptor","fileName":"ExposeInvocationInterceptor.java","lineNumber":95,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor","fileName":"CglibAopProxy.java","lineNumber":691,"methodName":"intercept","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d","fileName":"<generated>","lineNumber":-1,"methodName":"blogMessage","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":190,"methodName":"doInvoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":138,"methodName":"invokeForRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","fileName":"ServletInvocableHandlerMethod.java","lineNumber":105,"methodName":"invokeAndHandle","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":878,"methodName":"invokeHandlerMethod","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":792,"methodName":"handleInternal","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":87,"methodName":"handle","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":1040,"methodName":"doDispatch","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":943,"methodName":"doService","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":1006,"methodName":"processRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":898,"methodName":"doGet","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":626,"methodName":"service","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":883,"methodName":"service","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":733,"methodName":"service","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":231,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.tomcat.websocket.server.WsFilter","fileName":"WsFilter.java","lineNumber":53,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CorsFilter","fileName":"CorsFilter.java","lineNumber":92,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"com.alibaba.druid.support.http.WebStatFilter","fileName":"WebStatFilter.java","lineNumber":124,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.RequestContextFilter","fileName":"RequestContextFilter.java","lineNumber":100,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.FormContentFilter","fileName":"FormContentFilter.java","lineNumber":93,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CharacterEncodingFilter","fileName":"CharacterEncodingFilter.java","lineNumber":201,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.StandardWrapperValve","fileName":"StandardWrapperValve.java","lineNumber":202,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardContextValve","fileName":"StandardContextValve.java","lineNumber":96,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.authenticator.AuthenticatorBase","fileName":"AuthenticatorBase.java","lineNumber":541,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardHostValve","fileName":"StandardHostValve.java","lineNumber":139,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.valves.ErrorReportValve","fileName":"ErrorReportValve.java","lineNumber":92,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardEngineValve","fileName":"StandardEngineValve.java","lineNumber":74,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.connector.CoyoteAdapter","fileName":"CoyoteAdapter.java","lineNumber":343,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.http11.Http11Processor","fileName":"Http11Processor.java","lineNumber":373,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.AbstractProcessorLight","fileName":"AbstractProcessorLight.java","lineNumber":65,"methodName":"process","nativeMethod":false},{"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","fileName":"AbstractProtocol.java","lineNumber":868,"methodName":"process","nativeMethod":false},{"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","fileName":"NioEndpoint.java","lineNumber":1589,"methodName":"doRun","nativeMethod":false},{"className":"org.apache.tomcat.util.net.SocketProcessorBase","fileName":"SocketProcessorBase.java","lineNumber":49,"methodName":"run","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"methodName":"runWorker","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor$Worker","fileName":"ThreadPoolExecutor.java","lineNumber":617,"methodName":"run","nativeMethod":false},{"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","fileName":"TaskThread.java","lineNumber":61,"methodName":"run","nativeMethod":false},{"className":"java.lang.Thread","fileName":"Thread.java","lineNumber":745,"methodName":"run","nativeMethod":false}]},"httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","requestParams":{"model":{}},"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 18:43:01.753 ERROR 18600 --- [http-nio-8888-exec-5] c.htz.blog.exception.MyExceptionHandler  : null
+
+java.lang.NullPointerException: null
+	at cn.htz.blog.controller.front.IndexController.blogMessage(IndexController.java:255)
+	at cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at cn.htz.blog.aspect.LogAspect.doAround(LogAspect.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d.blogMessage(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-11-07 18:44:33.952 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:44:33.953 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:44:34.027 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:44:34.033 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:44:34.037 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:44:34.124 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.C.getLastCategoryList            : <==      Total: 0
+2020-11-07 18:44:34.139 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:44:34.140 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:44:34.202 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 0
+2020-11-07 18:44:34.204 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:44:34.206 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:44:34.291 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:44:34.293 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:44:34.295 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:44:34.388 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:44:53.479  INFO 18600 --- [http-nio-8888-exec-10] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":71416,"url":"http://localhost:8888/"}
+2020-11-07 18:45:29.922 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:45:29.925 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:45:30.027 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:45:36.344 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select sum(read_num) from t_blog 
+2020-11-07 18:45:36.345 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:45:36.401 DEBUG 18600 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:45:52.912  INFO 18600 --- [http-nio-8888-exec-2] cn.htz.blog.aspect.LogAspect             : Error Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","exception":{"@type":"java.lang.NullPointerException","stackTrace":[{"className":"cn.htz.blog.controller.front.IndexController","fileName":"IndexController.java","lineNumber":255,"methodName":"blogMessage","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960","fileName":"<generated>","lineNumber":-1,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.cglib.proxy.MethodProxy","fileName":"MethodProxy.java","lineNumber":218,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":771,"methodName":"invokeJoinpoint","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":163,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAfterThrowingAdvice","fileName":"AspectJAfterThrowingAdvice.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint","fileName":"MethodInvocationProceedingJoinPoint.java","lineNumber":88,"methodName":"proceed","nativeMethod":false},{"className":"cn.htz.blog.aspect.LogAspect","fileName":"LogAspect.java","lineNumber":39,"methodName":"doAround","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":644,"methodName":"invokeAdviceMethodWithGivenArgs","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":633,"methodName":"invokeAdviceMethod","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAroundAdvice","fileName":"AspectJAroundAdvice.java","lineNumber":70,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.interceptor.ExposeInvocationInterceptor","fileName":"ExposeInvocationInterceptor.java","lineNumber":95,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor","fileName":"CglibAopProxy.java","lineNumber":691,"methodName":"intercept","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d","fileName":"<generated>","lineNumber":-1,"methodName":"blogMessage","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":190,"methodName":"doInvoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":138,"methodName":"invokeForRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","fileName":"ServletInvocableHandlerMethod.java","lineNumber":105,"methodName":"invokeAndHandle","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":878,"methodName":"invokeHandlerMethod","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":792,"methodName":"handleInternal","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":87,"methodName":"handle","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":1040,"methodName":"doDispatch","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":943,"methodName":"doService","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":1006,"methodName":"processRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":898,"methodName":"doGet","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":626,"methodName":"service","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":883,"methodName":"service","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":733,"methodName":"service","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":231,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.tomcat.websocket.server.WsFilter","fileName":"WsFilter.java","lineNumber":53,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CorsFilter","fileName":"CorsFilter.java","lineNumber":92,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"com.alibaba.druid.support.http.WebStatFilter","fileName":"WebStatFilter.java","lineNumber":124,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.RequestContextFilter","fileName":"RequestContextFilter.java","lineNumber":100,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.FormContentFilter","fileName":"FormContentFilter.java","lineNumber":93,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CharacterEncodingFilter","fileName":"CharacterEncodingFilter.java","lineNumber":201,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.StandardWrapperValve","fileName":"StandardWrapperValve.java","lineNumber":202,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardContextValve","fileName":"StandardContextValve.java","lineNumber":96,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.authenticator.AuthenticatorBase","fileName":"AuthenticatorBase.java","lineNumber":541,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardHostValve","fileName":"StandardHostValve.java","lineNumber":139,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.valves.ErrorReportValve","fileName":"ErrorReportValve.java","lineNumber":92,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardEngineValve","fileName":"StandardEngineValve.java","lineNumber":74,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.connector.CoyoteAdapter","fileName":"CoyoteAdapter.java","lineNumber":343,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.http11.Http11Processor","fileName":"Http11Processor.java","lineNumber":373,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.AbstractProcessorLight","fileName":"AbstractProcessorLight.java","lineNumber":65,"methodName":"process","nativeMethod":false},{"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","fileName":"AbstractProtocol.java","lineNumber":868,"methodName":"process","nativeMethod":false},{"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","fileName":"NioEndpoint.java","lineNumber":1589,"methodName":"doRun","nativeMethod":false},{"className":"org.apache.tomcat.util.net.SocketProcessorBase","fileName":"SocketProcessorBase.java","lineNumber":49,"methodName":"run","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"methodName":"runWorker","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor$Worker","fileName":"ThreadPoolExecutor.java","lineNumber":617,"methodName":"run","nativeMethod":false},{"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","fileName":"TaskThread.java","lineNumber":61,"methodName":"run","nativeMethod":false},{"className":"java.lang.Thread","fileName":"Thread.java","lineNumber":745,"methodName":"run","nativeMethod":false}]},"httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","requestParams":{"model":{}},"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 18:45:56.494 ERROR 18600 --- [http-nio-8888-exec-2] c.htz.blog.exception.MyExceptionHandler  : null
+
+java.lang.NullPointerException: null
+	at cn.htz.blog.controller.front.IndexController.blogMessage(IndexController.java:255)
+	at cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at cn.htz.blog.aspect.LogAspect.doAround(LogAspect.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d.blogMessage(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-11-07 18:48:10.620 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:48:10.623 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:48:10.672 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:48:10.674 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:48:10.675 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:48:10.726 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.C.getLastCategoryList            : <==      Total: 0
+2020-11-07 18:48:10.727 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:48:10.728 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:48:10.773 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 0
+2020-11-07 18:48:10.775 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:48:10.776 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:48:10.832 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:48:10.834 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:48:10.836 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:48:10.893 DEBUG 18600 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:48:10.894  INFO 18600 --- [http-nio-8888-exec-6] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":336,"url":"http://localhost:8888/"}
+2020-11-07 18:48:12.030 DEBUG 18600 --- [http-nio-8888-exec-8] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:48:12.031 DEBUG 18600 --- [http-nio-8888-exec-8] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:48:12.087 DEBUG 18600 --- [http-nio-8888-exec-8] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:48:16.880 DEBUG 18600 --- [http-nio-8888-exec-8] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select sum(read_num) from t_blog 
+2020-11-07 18:48:16.882 DEBUG 18600 --- [http-nio-8888-exec-8] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:48:16.983 DEBUG 18600 --- [http-nio-8888-exec-8] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:49:10.999  INFO 18600 --- [http-nio-8888-exec-8] cn.htz.blog.aspect.LogAspect             : Error Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","exception":{"@type":"java.lang.NullPointerException","stackTrace":[{"className":"cn.htz.blog.controller.front.IndexController","fileName":"IndexController.java","lineNumber":255,"methodName":"blogMessage","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960","fileName":"<generated>","lineNumber":-1,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.cglib.proxy.MethodProxy","fileName":"MethodProxy.java","lineNumber":218,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":771,"methodName":"invokeJoinpoint","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":163,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAfterThrowingAdvice","fileName":"AspectJAfterThrowingAdvice.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint","fileName":"MethodInvocationProceedingJoinPoint.java","lineNumber":88,"methodName":"proceed","nativeMethod":false},{"className":"cn.htz.blog.aspect.LogAspect","fileName":"LogAspect.java","lineNumber":39,"methodName":"doAround","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":644,"methodName":"invokeAdviceMethodWithGivenArgs","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":633,"methodName":"invokeAdviceMethod","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAroundAdvice","fileName":"AspectJAroundAdvice.java","lineNumber":70,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.interceptor.ExposeInvocationInterceptor","fileName":"ExposeInvocationInterceptor.java","lineNumber":95,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor","fileName":"CglibAopProxy.java","lineNumber":691,"methodName":"intercept","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d","fileName":"<generated>","lineNumber":-1,"methodName":"blogMessage","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":190,"methodName":"doInvoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":138,"methodName":"invokeForRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","fileName":"ServletInvocableHandlerMethod.java","lineNumber":105,"methodName":"invokeAndHandle","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":878,"methodName":"invokeHandlerMethod","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":792,"methodName":"handleInternal","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":87,"methodName":"handle","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":1040,"methodName":"doDispatch","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":943,"methodName":"doService","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":1006,"methodName":"processRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":898,"methodName":"doGet","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":626,"methodName":"service","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":883,"methodName":"service","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":733,"methodName":"service","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":231,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.tomcat.websocket.server.WsFilter","fileName":"WsFilter.java","lineNumber":53,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CorsFilter","fileName":"CorsFilter.java","lineNumber":92,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"com.alibaba.druid.support.http.WebStatFilter","fileName":"WebStatFilter.java","lineNumber":124,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.RequestContextFilter","fileName":"RequestContextFilter.java","lineNumber":100,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.FormContentFilter","fileName":"FormContentFilter.java","lineNumber":93,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CharacterEncodingFilter","fileName":"CharacterEncodingFilter.java","lineNumber":201,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.StandardWrapperValve","fileName":"StandardWrapperValve.java","lineNumber":202,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardContextValve","fileName":"StandardContextValve.java","lineNumber":96,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.authenticator.AuthenticatorBase","fileName":"AuthenticatorBase.java","lineNumber":541,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardHostValve","fileName":"StandardHostValve.java","lineNumber":139,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.valves.ErrorReportValve","fileName":"ErrorReportValve.java","lineNumber":92,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardEngineValve","fileName":"StandardEngineValve.java","lineNumber":74,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.connector.CoyoteAdapter","fileName":"CoyoteAdapter.java","lineNumber":343,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.http11.Http11Processor","fileName":"Http11Processor.java","lineNumber":373,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.AbstractProcessorLight","fileName":"AbstractProcessorLight.java","lineNumber":65,"methodName":"process","nativeMethod":false},{"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","fileName":"AbstractProtocol.java","lineNumber":868,"methodName":"process","nativeMethod":false},{"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","fileName":"NioEndpoint.java","lineNumber":1589,"methodName":"doRun","nativeMethod":false},{"className":"org.apache.tomcat.util.net.SocketProcessorBase","fileName":"SocketProcessorBase.java","lineNumber":49,"methodName":"run","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"methodName":"runWorker","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor$Worker","fileName":"ThreadPoolExecutor.java","lineNumber":617,"methodName":"run","nativeMethod":false},{"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","fileName":"TaskThread.java","lineNumber":61,"methodName":"run","nativeMethod":false},{"className":"java.lang.Thread","fileName":"Thread.java","lineNumber":745,"methodName":"run","nativeMethod":false}]},"httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","requestParams":{"model":{}},"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 18:49:11.000 ERROR 18600 --- [http-nio-8888-exec-8] c.htz.blog.exception.MyExceptionHandler  : null
+
+java.lang.NullPointerException: null
+	at cn.htz.blog.controller.front.IndexController.blogMessage(IndexController.java:255)
+	at cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at cn.htz.blog.aspect.LogAspect.doAround(LogAspect.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d.blogMessage(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-11-07 18:49:26.077 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:49:26.078 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:49:26.184 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:49:26.186 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:49:26.186 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:49:26.240 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : <==      Total: 0
+2020-11-07 18:49:26.242 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:49:26.242 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:49:26.292 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 0
+2020-11-07 18:49:26.295 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:49:26.297 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:49:26.367 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:49:26.370 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:49:26.372 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:49:26.468 DEBUG 18600 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:49:26.470  INFO 18600 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":568,"url":"http://localhost:8888/"}
+2020-11-07 18:49:27.257 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:49:27.257 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:49:27.348 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:49:51.780 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select sum(read_num) from t_blog 
+2020-11-07 18:49:51.781 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:49:51.837 DEBUG 18600 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:49:51.838  INFO 18600 --- [http-nio-8888-exec-10] cn.htz.blog.aspect.LogAspect             : Error Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","exception":{"@type":"java.lang.NullPointerException","stackTrace":[{"className":"cn.htz.blog.controller.front.IndexController","fileName":"IndexController.java","lineNumber":255,"methodName":"blogMessage","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960","fileName":"<generated>","lineNumber":-1,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.cglib.proxy.MethodProxy","fileName":"MethodProxy.java","lineNumber":218,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":771,"methodName":"invokeJoinpoint","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":163,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAfterThrowingAdvice","fileName":"AspectJAfterThrowingAdvice.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint","fileName":"MethodInvocationProceedingJoinPoint.java","lineNumber":88,"methodName":"proceed","nativeMethod":false},{"className":"cn.htz.blog.aspect.LogAspect","fileName":"LogAspect.java","lineNumber":39,"methodName":"doAround","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":644,"methodName":"invokeAdviceMethodWithGivenArgs","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AbstractAspectJAdvice","fileName":"AbstractAspectJAdvice.java","lineNumber":633,"methodName":"invokeAdviceMethod","nativeMethod":false},{"className":"org.springframework.aop.aspectj.AspectJAroundAdvice","fileName":"AspectJAroundAdvice.java","lineNumber":70,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.interceptor.ExposeInvocationInterceptor","fileName":"ExposeInvocationInterceptor.java","lineNumber":95,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.aop.framework.ReflectiveMethodInvocation","fileName":"ReflectiveMethodInvocation.java","lineNumber":186,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation","fileName":"CglibAopProxy.java","lineNumber":749,"methodName":"proceed","nativeMethod":false},{"className":"org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor","fileName":"CglibAopProxy.java","lineNumber":691,"methodName":"intercept","nativeMethod":false},{"className":"cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d","fileName":"<generated>","lineNumber":-1,"methodName":"blogMessage","nativeMethod":false},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":-2,"methodName":"invoke0","nativeMethod":true},{"className":"sun.reflect.NativeMethodAccessorImpl","fileName":"NativeMethodAccessorImpl.java","lineNumber":62,"methodName":"invoke","nativeMethod":false},{"className":"sun.reflect.DelegatingMethodAccessorImpl","fileName":"DelegatingMethodAccessorImpl.java","lineNumber":43,"methodName":"invoke","nativeMethod":false},{"className":"java.lang.reflect.Method","fileName":"Method.java","lineNumber":498,"methodName":"invoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":190,"methodName":"doInvoke","nativeMethod":false},{"className":"org.springframework.web.method.support.InvocableHandlerMethod","fileName":"InvocableHandlerMethod.java","lineNumber":138,"methodName":"invokeForRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod","fileName":"ServletInvocableHandlerMethod.java","lineNumber":105,"methodName":"invokeAndHandle","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":878,"methodName":"invokeHandlerMethod","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter","fileName":"RequestMappingHandlerAdapter.java","lineNumber":792,"methodName":"handleInternal","nativeMethod":false},{"className":"org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter","fileName":"AbstractHandlerMethodAdapter.java","lineNumber":87,"methodName":"handle","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":1040,"methodName":"doDispatch","nativeMethod":false},{"className":"org.springframework.web.servlet.DispatcherServlet","fileName":"DispatcherServlet.java","lineNumber":943,"methodName":"doService","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":1006,"methodName":"processRequest","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":898,"methodName":"doGet","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":626,"methodName":"service","nativeMethod":false},{"className":"org.springframework.web.servlet.FrameworkServlet","fileName":"FrameworkServlet.java","lineNumber":883,"methodName":"service","nativeMethod":false},{"className":"javax.servlet.http.HttpServlet","fileName":"HttpServlet.java","lineNumber":733,"methodName":"service","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":231,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.tomcat.websocket.server.WsFilter","fileName":"WsFilter.java","lineNumber":53,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CorsFilter","fileName":"CorsFilter.java","lineNumber":92,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"com.alibaba.druid.support.http.WebStatFilter","fileName":"WebStatFilter.java","lineNumber":124,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.RequestContextFilter","fileName":"RequestContextFilter.java","lineNumber":100,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.FormContentFilter","fileName":"FormContentFilter.java","lineNumber":93,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.springframework.web.filter.CharacterEncodingFilter","fileName":"CharacterEncodingFilter.java","lineNumber":201,"methodName":"doFilterInternal","nativeMethod":false},{"className":"org.springframework.web.filter.OncePerRequestFilter","fileName":"OncePerRequestFilter.java","lineNumber":119,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":193,"methodName":"internalDoFilter","nativeMethod":false},{"className":"org.apache.catalina.core.ApplicationFilterChain","fileName":"ApplicationFilterChain.java","lineNumber":166,"methodName":"doFilter","nativeMethod":false},{"className":"org.apache.catalina.core.StandardWrapperValve","fileName":"StandardWrapperValve.java","lineNumber":202,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardContextValve","fileName":"StandardContextValve.java","lineNumber":96,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.authenticator.AuthenticatorBase","fileName":"AuthenticatorBase.java","lineNumber":541,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardHostValve","fileName":"StandardHostValve.java","lineNumber":139,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.valves.ErrorReportValve","fileName":"ErrorReportValve.java","lineNumber":92,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.core.StandardEngineValve","fileName":"StandardEngineValve.java","lineNumber":74,"methodName":"invoke","nativeMethod":false},{"className":"org.apache.catalina.connector.CoyoteAdapter","fileName":"CoyoteAdapter.java","lineNumber":343,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.http11.Http11Processor","fileName":"Http11Processor.java","lineNumber":373,"methodName":"service","nativeMethod":false},{"className":"org.apache.coyote.AbstractProcessorLight","fileName":"AbstractProcessorLight.java","lineNumber":65,"methodName":"process","nativeMethod":false},{"className":"org.apache.coyote.AbstractProtocol$ConnectionHandler","fileName":"AbstractProtocol.java","lineNumber":868,"methodName":"process","nativeMethod":false},{"className":"org.apache.tomcat.util.net.NioEndpoint$SocketProcessor","fileName":"NioEndpoint.java","lineNumber":1589,"methodName":"doRun","nativeMethod":false},{"className":"org.apache.tomcat.util.net.SocketProcessorBase","fileName":"SocketProcessorBase.java","lineNumber":49,"methodName":"run","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor","fileName":"ThreadPoolExecutor.java","lineNumber":1142,"methodName":"runWorker","nativeMethod":false},{"className":"java.util.concurrent.ThreadPoolExecutor$Worker","fileName":"ThreadPoolExecutor.java","lineNumber":617,"methodName":"run","nativeMethod":false},{"className":"org.apache.tomcat.util.threads.TaskThread$WrappingRunnable","fileName":"TaskThread.java","lineNumber":61,"methodName":"run","nativeMethod":false},{"className":"java.lang.Thread","fileName":"Thread.java","lineNumber":745,"methodName":"run","nativeMethod":false}]},"httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","requestParams":{"model":{}},"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 18:49:51.839 ERROR 18600 --- [http-nio-8888-exec-10] c.htz.blog.exception.MyExceptionHandler  : null
+
+java.lang.NullPointerException: null
+	at cn.htz.blog.controller.front.IndexController.blogMessage(IndexController.java:255)
+	at cn.htz.blog.controller.front.IndexController$$FastClassBySpringCGLIB$$a8072960.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at cn.htz.blog.aspect.LogAspect.doAround(LogAspect.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at cn.htz.blog.controller.front.IndexController$$EnhancerBySpringCGLIB$$1a4c33d.blogMessage(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-11-07 18:57:31.225  INFO 18600 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:57:31.226  INFO 18600 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-07 18:57:31.230  INFO 18600 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-11-07 18:57:35.232  INFO 4764 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Starting HtzBlogSpringBootApplication on LAPTOP-DOB2C73A with PID 4764 (D:\JavaStudy\个人博客\htz\blog_new\target\classes started by zhang in D:\JavaStudy\个人博客\htz\blog_new)
+2020-11-07 18:57:35.235 DEBUG 4764 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-11-07 18:57:35.235  INFO 4764 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : The following profiles are active: pro
+2020-11-07 18:57:36.718  INFO 4764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-11-07 18:57:36.741  INFO 4764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-07 18:57:36.742  INFO 4764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-07 18:57:36.832  INFO 4764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-07 18:57:36.832  INFO 4764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1551 ms
+2020-11-07 18:57:37.674  INFO 4764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-07 18:57:37.758  INFO 4764 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-07 18:57:38.100  INFO 4764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-11-07 18:57:38.111  INFO 4764 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Started HtzBlogSpringBootApplication in 3.575 seconds (JVM running for 6.191)
+2020-11-07 18:57:59.004  INFO 4764 --- [http-nio-8888-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1604745670; Hm_lpvt_6b1eb02bacb648d682681dc81149e144=1604746167] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-11-07 18:57:59.033  INFO 4764 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-07 18:57:59.034  INFO 4764 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-07 18:57:59.084  INFO 4764 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 50 ms
+2020-11-07 18:57:59.385  INFO 4764 --- [http-nio-8888-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-07 18:58:00.470 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-07 18:58:00.520 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-07 18:58:00.596 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-07 18:58:00.602 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-07 18:58:00.602 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-07 18:58:00.658 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : <==      Total: 0
+2020-11-07 18:58:00.700 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-07 18:58:00.700 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-07 18:58:00.755 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 0
+2020-11-07 18:58:00.768 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:58:00.769 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:58:00.831 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:58:00.833 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-07 18:58:00.833 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-07 18:58:00.897 DEBUG 4764 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 0
+2020-11-07 18:58:01.058  INFO 4764 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":1655,"url":"http://localhost:8888/"}
+2020-11-07 18:58:01.957 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-07 18:58:01.958 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-07 18:58:02.014 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-07 18:58:02.014 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select IFNULL(sum(read_num),0) from t_blog 
+2020-11-07 18:58:02.014 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-07 18:58:02.063 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-07 18:58:02.063 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==>  Preparing: select IFNULL(sum(comment_num),0) from t_blog 
+2020-11-07 18:58:02.064 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==> Parameters: 
+2020-11-07 18:58:02.108 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.BlogMapper.getBlogCommentTotal   : <==      Total: 1
+2020-11-07 18:58:02.117 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.MessageMapper.getCountMessages   : ==>  Preparing: select count(id) from t_message; 
+2020-11-07 18:58:02.118 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.MessageMapper.getCountMessages   : ==> Parameters: 
+2020-11-07 18:58:02.172 DEBUG 4764 --- [http-nio-8888-exec-9] c.h.b.m.MessageMapper.getCountMessages   : <==      Total: 1
+2020-11-07 18:58:02.174  INFO 4764 --- [http-nio-8888-exec-9] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":218,"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-07 21:25:59.853  INFO 4764 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-07 21:25:59.865  INFO 4764 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-07 21:25:59.870  INFO 4764 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

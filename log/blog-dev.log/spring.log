@@ -1,0 +1,672 @@
+2020-11-20 22:51:35.554  INFO 5212 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Starting HtzBlogSpringBootApplication on LAPTOP-DOB2C73A with PID 5212 (D:\JavaStudy\个人博客\htz\blog_new\target\classes started by zhang in D:\JavaStudy\个人博客\htz\blog_new)
+2020-11-20 22:51:35.560 DEBUG 5212 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-11-20 22:51:35.560  INFO 5212 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : The following profiles are active: pro
+2020-11-20 22:51:36.874  INFO 5212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2020-11-20 22:51:36.884  INFO 5212 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-20 22:51:36.885  INFO 5212 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-20 22:51:36.958  INFO 5212 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-20 22:51:36.959  INFO 5212 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1356 ms
+2020-11-20 22:51:39.335  INFO 5212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 22:51:39.469  INFO 5212 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-20 22:51:39.951  INFO 5212 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2020-11-20 22:51:39.969  INFO 5212 --- [main] c.htz.blog.HtzBlogSpringBootApplication  : Started HtzBlogSpringBootApplication in 4.978 seconds (JVM running for 6.459)
+2020-11-20 22:52:17.904  INFO 5212 --- [http-nio-8888-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1605451642,1605453810] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-11-20 22:52:17.911  INFO 5212 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-20 22:52:17.911  INFO 5212 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-20 22:52:17.924  INFO 5212 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-11-20 22:52:18.051  INFO 5212 --- [http-nio-8888-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-11-20 22:52:21.057 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-20 22:52:21.083 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-20 22:52:21.142 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-20 22:52:21.145 DEBUG 5212 --- [http-nio-8888-exec-2] c.htz.blog.mapper.BlogMapper.selectPage  : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where publish = 1 and show_status = 1 LIMIT ? 
+2020-11-20 22:52:21.146 DEBUG 5212 --- [http-nio-8888-exec-2] c.htz.blog.mapper.BlogMapper.selectPage  : ==> Parameters: 8(Integer)
+2020-11-20 22:52:21.400 DEBUG 5212 --- [http-nio-8888-exec-2] c.htz.blog.mapper.BlogMapper.selectPage  : <==      Total: 6
+2020-11-20 22:52:21.411 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:21.412 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 39(Long)
+2020-11-20 22:52:21.493 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:21.495 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:21.495 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:21.568 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:21.570 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 22:52:21.571 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 1(Long)
+2020-11-20 22:52:21.648 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 22:52:21.672 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 22:52:21.672 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 4(Long)
+2020-11-20 22:52:21.733 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 22:52:21.736 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:52:21.736 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:52:21.811 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:52:21.814 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:21.815 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 22:52:21.887 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:21.889 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:21.890 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:21.971 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:21.973 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 22:52:21.974 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 2(Long)
+2020-11-20 22:52:22.095 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 22:52:22.096 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 22:52:22.096 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 7(Long)
+2020-11-20 22:52:22.172 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 22:52:22.173 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:52:22.173 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:52:22.250 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:52:22.251 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:22.251 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 22:52:22.340 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:22.341 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:22.341 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:22.415 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:22.416 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 22:52:22.416 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 3(Long)
+2020-11-20 22:52:22.487 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-20 22:52:22.488 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-20 22:52:22.489 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 2(Long), 8(Long)
+2020-11-20 22:52:22.535 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-20 22:52:22.537 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:52:22.537 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:52:22.608 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:52:22.610 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:22.610 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 22:52:22.688 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:22.689 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:22.689 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 22:52:22.746 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:22.746 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 22:52:22.746 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 4(Long)
+2020-11-20 22:52:22.807 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : <==      Total: 1
+2020-11-20 22:52:22.808 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? ) 
+2020-11-20 22:52:22.809 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 6(Long)
+2020-11-20 22:52:22.852 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 1
+2020-11-20 22:52:22.855 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:52:22.856 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:52:22.929 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:52:22.933 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:22.933 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 22:52:22.977 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:22.979 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:22.979 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 22:52:23.047 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.048 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 22:52:23.048 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 5(Long)
+2020-11-20 22:52:23.127 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 22:52:23.129 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 22:52:23.130 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 10(Long), 11(Long)
+2020-11-20 22:52:23.206 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 22:52:23.207 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:52:23.208 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:52:23.288 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:52:23.289 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.289 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 22:52:23.369 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.370 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.371 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:23.447 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.448 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 22:52:23.448 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 6(Long)
+2020-11-20 22:52:23.492 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 22:52:23.493 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 22:52:23.494 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 8(Long), 12(Long)
+2020-11-20 22:52:23.570 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 22:52:23.572 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:52:23.572 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:52:23.647 DEBUG 5212 --- [http-nio-8888-exec-2] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:52:23.649 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-20 22:52:23.649 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-20 22:52:23.697 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.C.getLastCategoryList            : <==      Total: 8
+2020-11-20 22:52:23.699 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.699 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 22:52:23.769 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.770 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.770 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:23.816 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.817 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.817 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 39(Long)
+2020-11-20 22:52:23.887 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.888 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.888 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:23.931 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.931 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.932 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 40(Long)
+2020-11-20 22:52:23.981 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:23.982 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:23.982 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:24.053 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.056 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.057 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 41(Long)
+2020-11-20 22:52:24.130 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.131 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.132 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:24.208 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.210 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.211 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 42(Long)
+2020-11-20 22:52:24.288 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.290 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.290 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:24.338 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.339 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.339 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 43(Long)
+2020-11-20 22:52:24.414 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.415 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.416 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 22:52:24.493 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.494 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.495 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 44(Long)
+2020-11-20 22:52:24.573 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.574 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.575 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 22:52:24.647 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.648 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.649 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 22:52:24.700 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.701 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:52:24.701 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 22:52:24.767 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:52:24.772 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-20 22:52:24.772 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-20 22:52:24.849 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 12
+2020-11-20 22:52:24.851 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:24.851 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 1(Long)
+2020-11-20 22:52:24.897 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:24.897 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:24.897 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 2(Long)
+2020-11-20 22:52:24.967 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:24.969 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:24.970 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 3(Long)
+2020-11-20 22:52:25.036 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.037 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.037 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 4(Long)
+2020-11-20 22:52:25.111 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.112 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.113 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 5(Long)
+2020-11-20 22:52:25.171 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.172 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.172 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 6(Long)
+2020-11-20 22:52:25.211 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.212 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.212 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 7(Long)
+2020-11-20 22:52:25.288 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.289 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.290 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 8(Long)
+2020-11-20 22:52:25.337 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.338 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.338 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 9(Long)
+2020-11-20 22:52:25.407 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.409 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.409 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 10(Long)
+2020-11-20 22:52:25.450 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.451 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.451 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 11(Long)
+2020-11-20 22:52:25.495 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.496 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 22:52:25.496 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 12(Long)
+2020-11-20 22:52:25.567 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 22:52:25.572 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-20 22:52:25.572 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-20 22:52:25.731 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-20 22:52:25.734 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-20 22:52:25.735 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-20 22:52:25.894 DEBUG 5212 --- [http-nio-8888-exec-2] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-20 22:52:25.964  INFO 5212 --- [http-nio-8888-exec-2] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":7937,"url":"http://localhost:8888/"}
+2020-11-20 22:52:28.676 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-20 22:52:28.677 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-20 22:52:28.768 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-20 22:52:28.768 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select IFNULL(sum(read_num),0) from t_blog 
+2020-11-20 22:52:28.768 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-20 22:52:28.853 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-20 22:52:28.854 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==>  Preparing: select IFNULL(sum(comment_num),0) from t_blog 
+2020-11-20 22:52:28.854 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==> Parameters: 
+2020-11-20 22:52:29.077 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.BlogMapper.getBlogCommentTotal   : <==      Total: 1
+2020-11-20 22:52:29.081 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.MessageMapper.getCountMessages   : ==>  Preparing: select count(id) from t_message; 
+2020-11-20 22:52:29.081 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.MessageMapper.getCountMessages   : ==> Parameters: 
+2020-11-20 22:52:29.315 DEBUG 5212 --- [http-nio-8888-exec-7] c.h.b.m.MessageMapper.getCountMessages   : <==      Total: 1
+2020-11-20 22:52:29.316  INFO 5212 --- [http-nio-8888-exec-7] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":642,"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-20 22:53:08.049 DEBUG 5212 --- [http-nio-8888-exec-6] cn.htz.blog.mapper.BlogMapper.getById    : ==>  Preparing: select b.id, b.title, b.content, b.html_content, b.user_id, b.category_id, b.description, b.read_num, b.like_num, b.comment_num, b.first_picture, b.create_time, b.update_time, b.recommend, b.publish, b.appreciation, b.comment, b.flag, b.show_status, b.share_statement, c.id as cid, c.name as cname, c.icon, t.id as tid, t.name as tname from t_blog b left outer join t_category c on b.category_id = c.id left outer join t_blog_tag bt on b.id = bt.blog_id left outer join t_tag t on bt.tag_id = t.id where b.id = ?; 
+2020-11-20 22:53:08.049 DEBUG 5212 --- [http-nio-8888-exec-6] cn.htz.blog.mapper.BlogMapper.getById    : ==> Parameters: 4(Long)
+2020-11-20 22:53:08.245 DEBUG 5212 --- [http-nio-8888-exec-6] cn.htz.blog.mapper.BlogMapper.getById    : <==      Total: 1
+2020-11-20 22:53:08.256 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:53:08.256 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 22:53:08.339 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:53:08.340 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 22:53:08.340 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 22:53:08.415 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 22:53:08.479 DEBUG 5212 --- [http-nio-8888-exec-6] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 22:53:08.480 DEBUG 5212 --- [http-nio-8888-exec-6] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 22:53:08.531 DEBUG 5212 --- [http-nio-8888-exec-6] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 22:53:08.531 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.updateReadNumById     : ==>  Preparing: update t_blog set read_num = read_num + 1 where id = ? 
+2020-11-20 22:53:08.531 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.updateReadNumById     : ==> Parameters: 4(Long)
+2020-11-20 22:53:08.646 DEBUG 5212 --- [http-nio-8888-exec-6] c.h.b.m.BlogMapper.updateReadNumById     : <==    Updates: 1
+2020-11-20 22:53:08.737  INFO 5212 --- [http-nio-8888-exec-6] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.detail","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":769,"url":"http://localhost:8888/blog/4"}
+2020-11-20 22:53:09.327 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-20 22:53:09.328 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-20 22:53:09.375 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-20 22:53:09.375 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select IFNULL(sum(read_num),0) from t_blog 
+2020-11-20 22:53:09.375 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-20 22:53:09.450 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-20 22:53:09.451 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==>  Preparing: select IFNULL(sum(comment_num),0) from t_blog 
+2020-11-20 22:53:09.452 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==> Parameters: 
+2020-11-20 22:53:09.527 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.getBlogCommentTotal   : <==      Total: 1
+2020-11-20 22:53:09.528 DEBUG 5212 --- [http-nio-8888-exec-3] c.h.b.m.C.getCommentsByBlogId            : ==>  Preparing: select id, content, blog_id, create_time, parent_comment_id, commentator_type, email, username, avatar from t_comment where blog_id = ? order by create_time desc 
+2020-11-20 22:53:09.528 DEBUG 5212 --- [http-nio-8888-exec-3] c.h.b.m.C.getCommentsByBlogId            : ==> Parameters: 4(Long)
+2020-11-20 22:53:09.583 DEBUG 5212 --- [http-nio-8888-exec-3] c.h.b.m.C.getCommentsByBlogId            : <==      Total: 0
+2020-11-20 22:53:09.584 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.MessageMapper.getCountMessages   : ==>  Preparing: select count(id) from t_message; 
+2020-11-20 22:53:09.585  INFO 5212 --- [http-nio-8888-exec-3] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.comments","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":88,"url":"http://localhost:8888/comments/4"}
+2020-11-20 22:53:09.585 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.MessageMapper.getCountMessages   : ==> Parameters: 
+2020-11-20 22:53:09.647 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.MessageMapper.getCountMessages   : <==      Total: 1
+2020-11-20 22:53:09.647  INFO 5212 --- [http-nio-8888-exec-10] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":320,"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-20 23:03:03.175 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-20 23:03:03.176 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-20 23:03:03.227 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-20 23:03:03.231 DEBUG 5212 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where publish = 1 and show_status = 1 LIMIT ? 
+2020-11-20 23:03:03.234 DEBUG 5212 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : ==> Parameters: 8(Integer)
+2020-11-20 23:03:03.423 DEBUG 5212 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : <==      Total: 6
+2020-11-20 23:03:03.424 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:03.425 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 39(Long)
+2020-11-20 23:03:03.475 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:03.477 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:03.480 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:03.532 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:03.534 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:03.535 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 1(Long)
+2020-11-20 23:03:03.581 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:03.583 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:03.583 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 4(Long)
+2020-11-20 23:03:03.632 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:03.633 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:03.634 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:03.685 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:03.686 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:03.687 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:03.734 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:03.736 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:03.737 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:03.775 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:03.777 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:03.779 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 2(Long)
+2020-11-20 23:03:03.821 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:03.824 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:03.824 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 7(Long)
+2020-11-20 23:03:03.884 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:03.887 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:03.888 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:03.959 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:03.962 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:03.963 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:04.019 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.020 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.021 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:04.077 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.079 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:04.080 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 3(Long)
+2020-11-20 23:03:04.132 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-20 23:03:04.133 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-20 23:03:04.134 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 2(Long), 8(Long)
+2020-11-20 23:03:04.197 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-20 23:03:04.198 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:04.198 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:04.248 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:04.250 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.251 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 23:03:04.335 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.337 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.338 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:04.396 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.399 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:04.400 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 4(Long)
+2020-11-20 23:03:04.448 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 1
+2020-11-20 23:03:04.450 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? ) 
+2020-11-20 23:03:04.450 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 6(Long)
+2020-11-20 23:03:04.498 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 1
+2020-11-20 23:03:04.499 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:04.500 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:04.557 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:04.558 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.558 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 23:03:04.616 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.617 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.617 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:04.669 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.671 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:04.672 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 5(Long)
+2020-11-20 23:03:04.732 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:04.734 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:04.735 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 10(Long), 11(Long)
+2020-11-20 23:03:04.793 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:04.795 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:04.797 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:04.864 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:04.867 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.868 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:04.942 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:04.943 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:04.944 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:04.997 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.000 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:05.001 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 6(Long)
+2020-11-20 23:03:05.051 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:05.053 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:05.054 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 8(Long), 12(Long)
+2020-11-20 23:03:05.115 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:05.118 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:05.119 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:05.174 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:05.174 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-20 23:03:05.175 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-20 23:03:05.235 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : <==      Total: 8
+2020-11-20 23:03:05.237 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.237 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:05.285 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.286 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.287 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:05.337 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.338 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.339 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 39(Long)
+2020-11-20 23:03:05.391 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.393 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.394 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:05.454 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.455 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.456 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 40(Long)
+2020-11-20 23:03:05.512 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.515 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.515 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:05.562 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.565 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.565 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 41(Long)
+2020-11-20 23:03:05.623 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.624 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.624 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:05.679 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.683 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.683 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 42(Long)
+2020-11-20 23:03:05.738 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.739 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.739 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:05.800 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.801 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.801 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 43(Long)
+2020-11-20 23:03:05.857 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.858 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.858 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:05.904 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.905 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.906 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 44(Long)
+2020-11-20 23:03:05.965 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:05.967 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:05.968 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:06.037 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:06.039 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:06.039 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 23:03:06.090 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:06.092 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:06.094 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:06.154 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:06.156 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-20 23:03:06.157 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-20 23:03:06.217 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 12
+2020-11-20 23:03:06.218 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.219 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 1(Long)
+2020-11-20 23:03:06.274 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.274 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.275 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 2(Long)
+2020-11-20 23:03:06.320 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.320 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.321 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 3(Long)
+2020-11-20 23:03:06.376 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.377 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.377 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 4(Long)
+2020-11-20 23:03:06.438 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.439 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.439 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 5(Long)
+2020-11-20 23:03:06.492 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.493 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.493 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 6(Long)
+2020-11-20 23:03:06.545 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.546 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.546 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 7(Long)
+2020-11-20 23:03:06.605 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.606 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.606 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 8(Long)
+2020-11-20 23:03:06.654 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.655 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.655 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 9(Long)
+2020-11-20 23:03:06.709 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.710 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.710 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 10(Long)
+2020-11-20 23:03:06.787 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.788 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.788 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 11(Long)
+2020-11-20 23:03:06.839 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.840 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:06.840 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 12(Long)
+2020-11-20 23:03:06.896 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:06.898 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-20 23:03:06.898 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-20 23:03:07.013 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-20 23:03:07.014 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-20 23:03:07.014 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-20 23:03:07.122 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-20 23:03:07.124  INFO 5212 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":4085,"url":"http://localhost:8888/"}
+2020-11-20 23:03:07.746 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-20 23:03:07.746 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-20 23:03:07.828 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-20 23:03:07.829 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select IFNULL(sum(read_num),0) from t_blog 
+2020-11-20 23:03:07.829 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-20 23:03:07.878 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-20 23:03:07.878 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==>  Preparing: select IFNULL(sum(comment_num),0) from t_blog 
+2020-11-20 23:03:07.878 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==> Parameters: 
+2020-11-20 23:03:07.925 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.BlogMapper.getBlogCommentTotal   : <==      Total: 1
+2020-11-20 23:03:07.926 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.MessageMapper.getCountMessages   : ==>  Preparing: select count(id) from t_message; 
+2020-11-20 23:03:07.926 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.MessageMapper.getCountMessages   : ==> Parameters: 
+2020-11-20 23:03:07.979 DEBUG 5212 --- [http-nio-8888-exec-10] c.h.b.m.MessageMapper.getCountMessages   : <==      Total: 1
+2020-11-20 23:03:07.979  INFO 5212 --- [http-nio-8888-exec-10] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":233,"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-20 23:03:27.560 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_blog WHERE publish = 1 AND show_status = 1 
+2020-11-20 23:03:27.561 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : ==> Parameters: 
+2020-11-20 23:03:27.619 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectPage_COUNT      : <==      Total: 1
+2020-11-20 23:03:27.620 DEBUG 5212 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where publish = 1 and show_status = 1 LIMIT ? 
+2020-11-20 23:03:27.620 DEBUG 5212 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : ==> Parameters: 8(Integer)
+2020-11-20 23:03:27.792 DEBUG 5212 --- [http-nio-8888-exec-1] c.htz.blog.mapper.BlogMapper.selectPage  : <==      Total: 6
+2020-11-20 23:03:27.793 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:27.794 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 39(Long)
+2020-11-20 23:03:27.838 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:27.841 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:27.842 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:27.891 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:27.893 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:27.894 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 1(Long)
+2020-11-20 23:03:27.943 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:27.944 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:27.944 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 4(Long)
+2020-11-20 23:03:28.004 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:28.005 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:28.006 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:28.057 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:28.059 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.060 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:28.117 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.119 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.120 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:28.171 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.172 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:28.173 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 2(Long)
+2020-11-20 23:03:28.222 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:28.222 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:28.223 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 7(Long)
+2020-11-20 23:03:28.271 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:28.273 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:28.274 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:28.323 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:28.324 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.324 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:28.363 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.365 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.366 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:28.412 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.413 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:28.414 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 3(Long)
+2020-11-20 23:03:28.461 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 3
+2020-11-20 23:03:28.462 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? , ? ) 
+2020-11-20 23:03:28.462 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 1(Long), 2(Long), 8(Long)
+2020-11-20 23:03:28.525 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 3
+2020-11-20 23:03:28.526 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:28.526 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:28.578 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:28.590 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.591 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 23:03:28.640 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.641 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.642 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:28.727 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.728 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:28.728 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 4(Long)
+2020-11-20 23:03:28.774 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 1
+2020-11-20 23:03:28.777 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? ) 
+2020-11-20 23:03:28.778 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 6(Long)
+2020-11-20 23:03:28.826 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 1
+2020-11-20 23:03:28.827 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:28.827 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:28.892 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:28.893 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.893 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 23:03:28.936 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.937 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:28.938 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:28.984 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:28.987 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:28.987 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 5(Long)
+2020-11-20 23:03:29.034 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:29.037 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:29.037 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 10(Long), 11(Long)
+2020-11-20 23:03:29.084 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:29.085 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:29.086 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:29.134 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:29.135 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.135 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:29.185 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.188 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.188 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:29.250 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.253 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==>  Preparing: select tag_id, blog_id from t_blog_tag where blog_id = ? 
+2020-11-20 23:03:29.253 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : ==> Parameters: 6(Long)
+2020-11-20 23:03:29.299 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getTagsByBlogId                : <==      Total: 2
+2020-11-20 23:03:29.301 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==>  Preparing: select id, name from t_tag where id in ( ? , ? ) 
+2020-11-20 23:03:29.302 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : ==> Parameters: 8(Long), 12(Long)
+2020-11-20 23:03:29.352 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.TagMapper.getTagsByIds   : <==      Total: 2
+2020-11-20 23:03:29.353 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==>  Preparing: select id, username, email, phone, avatar, type, create_time, update_time from t_user where id = ? 
+2020-11-20 23:03:29.354 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : ==> Parameters: 1(Long)
+2020-11-20 23:03:29.400 DEBUG 5212 --- [http-nio-8888-exec-1] cn.htz.blog.mapper.UserMapper.getById    : <==      Total: 1
+2020-11-20 23:03:29.402 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==>  Preparing: select c.id, c.name, c.parent_id, c.cat_level, c.icon, count(b.id) blogCount from t_category c left join t_blog b on c.id = b.category_id where cat_level = 2 group by c.id 
+2020-11-20 23:03:29.403 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : ==> Parameters: 
+2020-11-20 23:03:29.451 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.C.getLastCategoryList            : <==      Total: 8
+2020-11-20 23:03:29.453 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.454 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 38(Long)
+2020-11-20 23:03:29.503 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.504 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.504 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:29.559 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.559 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.560 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 39(Long)
+2020-11-20 23:03:29.615 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.617 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.618 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:29.665 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.669 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.670 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 40(Long)
+2020-11-20 23:03:29.717 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.718 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.719 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:29.770 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.771 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.771 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 41(Long)
+2020-11-20 23:03:29.818 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.819 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.820 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:29.861 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.861 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.862 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 42(Long)
+2020-11-20 23:03:29.910 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.911 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.911 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:29.960 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:29.961 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:29.961 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 43(Long)
+2020-11-20 23:03:30.004 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:30.005 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:30.005 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 36(Long)
+2020-11-20 23:03:30.052 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:30.054 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:30.054 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 44(Long)
+2020-11-20 23:03:30.111 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:30.112 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:30.113 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:30.172 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:30.172 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:30.173 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 46(Long)
+2020-11-20 23:03:30.227 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:30.228 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==>  Preparing: select id, name, parent_id, cat_level, icon from t_category where id = ? 
+2020-11-20 23:03:30.228 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : ==> Parameters: 37(Long)
+2020-11-20 23:03:30.288 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.CategoryMapper.getById   : <==      Total: 1
+2020-11-20 23:03:30.290 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==>  Preparing: select id, name from t_tag where 1 = 1 
+2020-11-20 23:03:30.291 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : ==> Parameters: 
+2020-11-20 23:03:30.351 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.mapper.TagMapper.selectListByKey   : <==      Total: 12
+2020-11-20 23:03:30.354 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.355 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 1(Long)
+2020-11-20 23:03:30.401 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.402 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.403 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 2(Long)
+2020-11-20 23:03:30.449 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.451 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.452 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 3(Long)
+2020-11-20 23:03:30.495 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.499 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.501 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 4(Long)
+2020-11-20 23:03:30.547 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.550 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.552 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 5(Long)
+2020-11-20 23:03:30.605 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.606 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.606 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 6(Long)
+2020-11-20 23:03:30.651 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.652 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.653 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 7(Long)
+2020-11-20 23:03:30.701 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.702 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.703 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 8(Long)
+2020-11-20 23:03:30.750 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.752 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.753 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 9(Long)
+2020-11-20 23:03:30.795 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.796 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.798 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 10(Long)
+2020-11-20 23:03:30.845 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.846 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.847 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 11(Long)
+2020-11-20 23:03:30.895 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.899 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==>  Preparing: select count(tag_id) from t_blog_tag where tag_id = ? 
+2020-11-20 23:03:30.899 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : ==> Parameters: 12(Long)
+2020-11-20 23:03:30.949 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.B.getBlogCountByTagId            : <==      Total: 1
+2020-11-20 23:03:30.951 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-20 23:03:30.952 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-20 23:03:31.050 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-20 23:03:31.052 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==>  Preparing: select id, title, content, user_id, category_id, description, read_num, like_num, comment_num, first_picture, create_time, update_time, recommend, publish, appreciation, comment, flag, show_status, share_statement from t_blog where show_status = 1 and publish = 1 order by create_time desc limit ? 
+2020-11-20 23:03:31.052 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : ==> Parameters: 5(Integer)
+2020-11-20 23:03:31.152 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.findBlogListByType    : <==      Total: 5
+2020-11-20 23:03:31.154  INFO 5212 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.index","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":3595,"url":"http://localhost:8888/"}
+2020-11-20 23:03:32.806 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.BlogMapper.selectCount   : ==>  Preparing: select count(id) from t_blog 
+2020-11-20 23:03:32.806 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.BlogMapper.selectCount   : ==> Parameters: 
+2020-11-20 23:03:32.926 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.blog.mapper.BlogMapper.selectCount   : <==      Total: 1
+2020-11-20 23:03:32.926 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectTotalReadNum    : ==>  Preparing: select IFNULL(sum(read_num),0) from t_blog 
+2020-11-20 23:03:32.926 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectTotalReadNum    : ==> Parameters: 
+2020-11-20 23:03:33.101 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.selectTotalReadNum    : <==      Total: 1
+2020-11-20 23:03:33.102 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==>  Preparing: select IFNULL(sum(comment_num),0) from t_blog 
+2020-11-20 23:03:33.103 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.getBlogCommentTotal   : ==> Parameters: 
+2020-11-20 23:03:33.239 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.BlogMapper.getBlogCommentTotal   : <==      Total: 1
+2020-11-20 23:03:33.240 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.MessageMapper.getCountMessages   : ==>  Preparing: select count(id) from t_message; 
+2020-11-20 23:03:33.240 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.MessageMapper.getCountMessages   : ==> Parameters: 
+2020-11-20 23:03:33.285 DEBUG 5212 --- [http-nio-8888-exec-1] c.h.b.m.MessageMapper.getCountMessages   : <==      Total: 1
+2020-11-20 23:03:33.286  INFO 5212 --- [http-nio-8888-exec-1] cn.htz.blog.aspect.LogAspect             : Request Info : {"classMethod":"cn.htz.blog.controller.front.IndexController.blogMessage","httpMethod":"GET","ip":"0:0:0:0:0:0:0:1","timeCost":481,"url":"http://localhost:8888/footer/blogmessage"}
+2020-11-20 23:04:16.928  INFO 5212 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-20 23:04:16.928  INFO 5212 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2020-11-20 23:04:16.931  INFO 5212 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
