@@ -58,18 +58,11 @@ pagehelper:
 # 阿里云对象存储服务配置
 aliyun:
   oss:
-    accessKeyId: LTAI4GCGuxX5QqHskUq4kf8Y
-    accessKeySecret: DByRaVlmxDcg034CfcI0737ZIbdVPz
-    endpoint: http://oss-cn-hangzhou.aliyuncs.com
-    bucketName: blog-htz
-    webUrl: https://blog-htz.oss-cn-hangzhou.aliyuncs.com
-
-##短信相关配置
-#sms:
-#  accessKeyId: LTAI4GCGuxX5QqHskUq4kf8Y
-#  accessKeySecret: DByRaVlmxDcg034CfcI0737ZIbdVPz
-#  signName: X博客 # 签名名称
-#  verifyCodeTemplate: SMS_183195163 # 模板名称
+    accessKeyId: ***
+    accessKeySecret: ***
+    endpoint: ***
+    bucketName: ***
+    webUrl: ***
 
 comment.avatar: /images/avatar.jpg  #游客默认头像
 logging:
