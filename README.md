@@ -147,25 +147,8 @@ private List<CommentVo> tempReplies = new ArrayList<>();
 private void combineChildren(List<CommentVo> firstLevelCommentVos, List<CommentVo> allComments) {
     // 遍历所有一级评论
     for (CommentVo commentVo : firstLevelCommentVos) {
-        // 过滤出一级评论的直接子评论
-        List<CommentVo> replyComments = allComments.stream()
-            .filter(comment -> comment.getParentCommentId().equals(commentVo.getId()))
-            .collect(Collectors.toList());
-        if (!CollectionUtils.isEmpty(replyComments)) {
-            // 遍历所有的子评论
-            for (CommentVo commentChild : replyComments) {
-                // 设置父评论
-                CommentVo newComment = new CommentVo();
-                BeanUtils.copyProperties(commentVo, newComment);
-   // 直接设置commentVo会报错Infinite recursion (StackOverflowError)  through reference chain
-                commentChild.setParentComment(newComment);
-                // 子评论添加到临时存放集合
-   			   tempReplies.add(commentChild);
-                //循环迭代，找出子代，存放在tempReplies中
-                recursively(commentChild, allComments);
-
-            }
-        }
+        // 递归设置子父评论，收集子评论集合
+        recursively(commentVo, allComments);
         //修改顶级节点的children集合为迭代处理后的集合
         commentVo.setReplyComments(tempReplies);
         //清除临时存放区
@@ -174,28 +157,41 @@ private void combineChildren(List<CommentVo> firstLevelCommentVos, List<CommentV
 }
 
 /**
- * 递归迭代，剥洋葱
- * @param commentVo 被迭代的对象
- * @return
- */
+     * 递归迭代，剥洋葱
+     * @param commentVo 被迭代的对象
+     * @return
+     */
 private void recursively(CommentVo commentVo, List<CommentVo> allComments) {
+    if (CollectionUtils.isEmpty(allComments)) {
+        return;
+    }
+
     // 过滤出直接子评论
     List<CommentVo> replyComments = allComments.stream()
         .filter(comment -> comment.getParentCommentId().equals(commentVo.getId()))
         .collect(Collectors.toList());
+
+    if (CollectionUtils.isEmpty(replyComments)) {
+        return;
+    }
+
+    // 评论集合缩小
+    allComments = allComments.stream()
+        .filter(comment -> !comment.getParentCommentId().equals(commentVo.getId()))
+        .collect(Collectors.toList());
+
     if (!CollectionUtils.isEmpty(replyComments)) {
         for (CommentVo reply : replyComments) {
             // 设置父评论
-            reply.setParentComment(commentVo);
+            // 创建新对象，防止出现 Could not write JSON: Infinite recursion (StackOverflowError); nested exception is com.fasterxml.jackson.databind.JsonMappingException: Infinite recursion (StackOverflowError) (through reference chain: java.util.ArrayList[0]->cn.htz.blog.vo.CommentVo["parentComment"]->cn.htz.blog.vo.CommentVo["parentComment"]->cn.htz.blog.vo.CommentVo["replyComments"]->java.util.ArrayList[0]->cn.htz.blog.vo.CommentVo["parentComment"]->cn.htz.blog.vo.CommentVo["parentComment"]
+            CommentVo newComment = new CommentVo();
+            BeanUtils.copyProperties(commentVo, newComment);
+            reply.setParentComment(newComment);
             tempReplies.add(reply);
-            List<CommentVo> replyComments2 = allComments.stream()
-                .filter(comment -> comment.getParentCommentId().equals(reply.getId()))
-                .collect(Collectors.toList());
-            if (!CollectionUtils.isEmpty(replyComments2)) {
-                recursively(reply, allComments);
-            }
+            recursively(reply, allComments);
         }
     }
 }
+
 
 ```
